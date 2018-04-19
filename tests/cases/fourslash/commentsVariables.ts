@@ -59,7 +59,7 @@ verify.currentSignatureHelpDocCommentIs("foos comment");
 verify.quickInfoAt("5q", "function foo(): void", "foos comment");
 
 goTo.marker('6');
-verify.currentSignatureHelpDocCommentIs("");
+verify.currentSignatureHelpDocCommentIs("fooVar comment");
 verify.quickInfoAt("6q", "var fooVar: () => void");
 
 goTo.marker('7');
